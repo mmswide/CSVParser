@@ -1,0 +1,15 @@
+<h1>CsvParser</h1>
+
+<%= form_tag(csv_parsers_path, :method=>'post', :multipart => true) do %>
+ <!-- <p>
+   Input your CSV content:<br />
+   <%= text_area_tag "csv_content", "", :size=>"50x20" %>
+ </p> -->
+ <p>
+   Add an attachment:<br />
+   <%= file_field_tag "csv_file" %>
+ </p>
+ <p>
+   <%= submit_tag 'Submit' %>
+ </p>
+<% end %>
